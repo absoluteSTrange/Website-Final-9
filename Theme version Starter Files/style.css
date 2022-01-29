@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  /* Font  */
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: black; /*#505962*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  /* margin-top: -4rem; */
+}
+
+/* * Navigation */
+
+.navbar {
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  /* background: rgba(0, 0, 0, 0.6) !important; */
+}
+
+.navbar-brand img {
+  height: 2.2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; /*#505962*/
+  padding-top: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(29, 29, 255);
+}
+
+/* * Scroll to top */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 500px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 60px;
+}
+
+/* .btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: rgb(29, 29, 255) !important;
+  border-color: #8064a2;
+} */
+
+/* * Landing Page */
+.home-inner {
+  background-image: url(ImportedImages/ImageDim.png);
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+}
+
+.caption h1 {
+  /* font-size: 3.8rem;
+  font-weight: bold; */
+  /* letter-spacing: 0.3rem; */
+  padding-bottom: 0.2rem;
+  /* text-shadow: 0.1rem 0.1rem 0.8rem black; */
+}
+
+.caption h3 {
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 0.2rem;
+}
+
+.btn-lg,
+.btn-md,
+.btn-sm {
+  border-radius: 0px;
+  border-width: 3px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1;
+}
+
+/* * Course Section */
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+/* * Features Section */
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+.heading-underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: rgb(29, 29, 255); /*#1ebba3*/
+  margin: 0 auto 2rem;
+  margin-top: 1.9rem;
+}
+
+.feature svg.svg-inline--fa {
+  color: rgb(41, 41, 182);
+}
+
+.feature h3 {
+  padding-bottom: 0.4rem;
+}
+
+.feature p {
+}
+
+/* Resources section / BBC Universal Exports section*/
+
+.fixed {
+  background-image: url(ImportedImages/image4.jpg);
+  /*   background-image: url(img/apple.png); */
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7rem 2rem;
+}
+
+.fixed-background h3 {
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  margin-bottom: 2rem;
+}
+
+.fixed-background p {
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  margin-top: 1.5rem;
+}
+
+/* * Clients Section */
+.clientsRow {
+  display: flex;
+}
+
+.card {
+  /*?  Margin Veritcal */
+  margin-top: 20px;
+
+  /*?  Margin Horizontal */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.55s ease-in-out;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
